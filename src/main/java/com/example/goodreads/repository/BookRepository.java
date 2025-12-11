@@ -1,18 +1,14 @@
 package com.example.goodreads.repository;
 
-import java.util.ArrayList;
-
 import com.example.goodreads.model.Book;
+
+import java.util.ArrayList;
 
 public interface BookRepository {
     ArrayList<Book> getBooks();
-
-    Book getBookById(int bookId);
-    
+    Book getBookById(int id);
     Book addBook(Book book);
-    
-    Book updateBook(int bookId, Book book);
-    
-    void deleteBook(int bookId);
+    void deleteBook(int id);
+    Book updateBook(int id,Book book);
 
 }
